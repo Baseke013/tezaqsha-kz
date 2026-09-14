@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Сравнить условия на TezAqsha
+    url: https://tezaqsha.com/compare
+    about: Открыть таблицу сравнения до трёх предложений.
+  - name: Правила исправлений
+    url: https://tezaqsha.com/redactsiya.html
+    about: Узнать, какие источники используются редакцией.

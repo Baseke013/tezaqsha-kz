@@ -1,0 +1,44 @@
+name: Предложить исправление сравнения
+description: Сообщить о расхождении в условиях или предложить параметр сравнения
+title: "Сравнение: "
+labels:
+  - comparison-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Укажите публичный первичный источник. Реклама, партнёрское описание и пользовательский отзыв сами по себе не подтверждают актуальную ставку, ГЭСВ или лицензию.
+  - type: input
+    id: page
+    attributes:
+      label: Страница TezAqsha
+      placeholder: https://tezaqsha.com/compare
+    validations:
+      required: true
+  - type: input
+    id: brands
+    attributes:
+      label: Какие организации или сервисы сравниваются
+    validations:
+      required: true
+  - type: textarea
+    id: discrepancy
+    attributes:
+      label: Что нужно проверить или добавить
+      placeholder: Точное утверждение, параметр или расхождение.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Ссылка на первичный источник
+      placeholder: Официальный документ, реестр или страница организации
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Безопасность
+      options:
+        - label: В сообщении нет ИИН, телефона, данных карты, договора или банковской выписки.
+          required: true

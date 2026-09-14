@@ -1,0 +1,71 @@
+name: Реальный опыт с МФО или сервисом
+description: Сообщить о собственном опыте без персональных и платёжных данных
+title: "Отзыв: "
+labels:
+  - review-pending
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Отзыв публичен после отправки. Не публикуйте ИИН, телефон, номер договора, номер карты, CVV, SMS-коды, банковскую выписку или скриншоты личного кабинета. TezAqsha проверяет отзыв до переноса на сайт и может запросить уточнение.
+  - type: dropdown
+    id: language
+    attributes:
+      label: Язык
+      options:
+        - Русский
+        - Қазақша
+    validations:
+      required: true
+  - type: input
+    id: brand
+    attributes:
+      label: Название МФО или сервиса
+      placeholder: Например, Vivus или Forzaem.kz
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Ваш опыт
+      options:
+        - Только сравнивал условия
+        - Отправлял заявку
+        - Получал микрокредит
+        - Погашал микрокредит
+        - Пользовался платным сервисом подбора
+        - Отменял подписку или оспаривал списание
+    validations:
+      required: true
+  - type: input
+    id: period
+    attributes:
+      label: Когда это было
+      description: Достаточно месяца и года; точную дату указывать не нужно.
+      placeholder: Август 2026
+    validations:
+      required: true
+  - type: textarea
+    id: facts
+    attributes:
+      label: Что произошло
+      description: Опишите последовательность действий и результат. Не публикуйте персональные данные и обвинения, которые нельзя подтвердить.
+      placeholder: Какие условия сравнили, что увидели до подтверждения и чем завершилась ситуация.
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Что оказалось важным при сравнении
+      description: Например, полная сумма возврата, ГЭСВ, срок, способ получения, платная подписка или погашение.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Подтверждение автора
+      options:
+        - label: Я описываю собственный опыт и не получил оплату за этот отзыв.
+          required: true
+        - label: Я удалил персональные, договорные и платёжные данные.
+          required: true
+        - label: Я понимаю, что сообщение будет публичным и может быть отредактировано только для удаления опасных данных и явной рекламы.
+          required: true
