@@ -14,6 +14,7 @@
 - [Методология сравнения](https://tezaqsha.com/methodology)
 - [Редакционная политика](https://tezaqsha.com/redactsiya.html)
 - [Раскрытие партнерских отношений](https://tezaqsha.com/disclosure)
+- [Материалы для редакций и каталогов](MEDIA.md)
 
 ## Исправления
 
